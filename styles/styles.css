@@ -92,7 +92,7 @@ div {
 
 /* ------------------------------------- */
 
-.title-section {
+.project-title {
 	margin-bottom: 40px;
 	font-size: 55px;
 	line-height: 72px;
@@ -108,7 +108,7 @@ div {
 			rgba(0, 0, 0, 0.9) 100%);
 }
 
-.project__title {
+.project__subtitle {
 	position: absolute;
 	left: 50px;
 	bottom: 94px;
@@ -124,7 +124,7 @@ div {
 	line-height: 39px;
 }
 
-.projects-list {
+.project-list {
 	margin-bottom: 80px;
 }
 
@@ -150,3 +150,39 @@ div {
 .projects {
 	margin-bottom: 150px;
 }
+
+/* ----------------------------- */
+
+.competence-title {
+	margin-bottom: 48px;
+	font-size: 55px;
+	line-height: 72px;
+}
+
+.competence__subtitle {
+	margin-bottom: 15px;
+	font-size: 35px;
+	line-height: 46px;
+	color: #1BFF07;
+}
+
+.competence__description {
+	width: 778px;
+	font-size: 22px;
+	line-height: 29px;
+}
+
+.competence {
+	margin-bottom: 60px;
+}
+
+.file-html-before:before {
+	content: '';
+	display: block;
+	width: 45px;
+	height: 44px;
+	margin-bottom: 12px;
+	background-image: url(../resources/file-html.png);
+}
+
+/* ------------------------------ */
