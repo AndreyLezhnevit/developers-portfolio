@@ -1,5 +1,6 @@
 body {
 	font-family: 'IBM Plex Mono', monospace;
+	background-color: #000000;
 }
 
 .container {
@@ -7,10 +8,24 @@ body {
 	width: 1150px;
 }
 
+h1,
+h2,
+h3,
+a,
+p,
+div {
+	letter-spacing: -0.03em;
+	color: #FFFFFF;
+}
+
 .header {
+	margin-bottom: 150px;
 	width: 100%;
 	padding: 23px 0 94px 0;
-	background-image: url(../resources/developer.png);
+	background: linear-gradient(180deg,
+			rgba(0, 0, 0, 0) 0%,
+			rgba(0, 0, 0, 0.5) 100%),
+		url(../resources/developer.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50%;
@@ -24,12 +39,12 @@ body {
 	display: inline-block;
 	width: 180px;
 	height: 55px;
-	border: 1px solid #000;
+	border: 1px solid #000000;
 	border-radius: 100px;
 	background-color: #000000;
+	line-height: 55px;
 	font-size: 42px;
 	font-weight: 700;
-	line-height: 55px;
 	letter-spacing: -0.11em;
 	text-transform: uppercase;
 	text-align: center;
@@ -46,9 +61,7 @@ body {
 	margin-right: 50px;
 	font-size: 18px;
 	line-height: 23px;
-	letter-spacing: -0.03em;
 	text-decoration: none;
-	color: #FFFFFF;
 }
 
 .nav__link:last-child {
@@ -69,13 +82,71 @@ body {
 	width: 430px;
 	font-size: 20px;
 	line-height: 26px;
-	letter-spacing: -0.03em;
-	color: #FFFFFF;
 }
 
 .title {
 	font-size: 80px;
 	line-height: 70px;
-	letter-spacing: -0.03em;
 	color: #1BFF07;
+}
+
+/* ------------------------------------- */
+
+.title-section {
+	margin-bottom: 40px;
+	font-size: 55px;
+	line-height: 72px;
+}
+
+.project {
+	position: relative;
+}
+
+.project__image {
+	background: linear-gradient(180deg,
+			rgba(0, 0, 0, 0) 0%,
+			rgba(0, 0, 0, 0.9) 100%);
+}
+
+.project__title {
+	position: absolute;
+	left: 50px;
+	bottom: 94px;
+	font-size: 35px;
+	line-height: 46px;
+}
+
+.project__description {
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+	font-size: 30px;
+	line-height: 39px;
+}
+
+.projects-list {
+	margin-bottom: 80px;
+}
+
+.btn-all-projects {
+	display: block;
+	width: 582px;
+	height: 153px;
+	border-radius: 10px;
+	line-height: 153px;
+	font-size: 30px;
+	text-align: center;
+	background: #1BFF07;
+	color: #000000;
+	text-decoration: none;
+}
+
+.btn-all-projects:hover {
+	border: 1px solid #1BFF07;
+	background: #000000;
+	color: #1BFF07;
+}
+
+.projects {
+	margin-bottom: 150px;
 }
