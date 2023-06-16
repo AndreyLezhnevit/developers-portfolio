@@ -216,7 +216,6 @@ div {
 
 .service__text {
 	padding: 40px;
-	border: 1px solid #191C19;
 	border-radius: 30px;
 	background: #191C19;
 }
@@ -234,3 +233,37 @@ div {
 }
 
 /* ----------------------------- */
+
+.contacts {
+	margin-bottom: 150px;
+	border-radius: 30px;
+	background: #191C19 no-repeat right url(../resources/сharacter.png);
+}
+
+.contacts-wrapper {
+	padding: 320px 0 169px 0;
+}
+
+.contacts-title {
+	margin-bottom: 28px;
+	font-size: 35px;
+	line-height: 60px;
+}
+
+.contact__link {
+	font-size: 60px;
+	line-height: 60px;
+	text-decoration: none;
+}
+
+.contact__link:hover {
+	color: #1BFF07;
+}
+
+.contact {
+	margin-bottom: 20px;
+}
+
+.contact:last-child {
+	margin-bottom: 0;
+}
