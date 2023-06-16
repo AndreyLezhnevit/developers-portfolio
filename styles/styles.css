@@ -143,7 +143,7 @@ div {
 
 .btn-all-projects:hover {
 	border: 1px solid #1BFF07;
-	background: #000000;
+	background-color: #000000;
 	color: #1BFF07;
 }
 
@@ -176,6 +176,10 @@ div {
 	margin-bottom: 60px;
 }
 
+.competence:last-child {
+	margin-bottom: 0;
+}
+
 .file-html-before:before {
 	content: '';
 	display: block;
@@ -185,4 +189,48 @@ div {
 	background-image: url(../resources/file-html.png);
 }
 
+.competencies {
+	margin-bottom: 150px;
+}
+
 /* ------------------------------ */
+
+.service-title {
+	margin-bottom: 74px;
+	width: 403px;
+	font-size: 35px;
+	line-height: 46px;
+}
+
+.service__title {
+	font-size: 55px;
+	line-height: 72px;
+	color: #1BFF07;
+}
+
+.service__description {
+	width: 749px;
+	font-size: 22px;
+	line-height: 29px;
+}
+
+.service__text {
+	padding: 40px;
+	border: 1px solid #191C19;
+	border-radius: 30px;
+	background: #191C19;
+}
+
+.service {
+	margin-bottom: 74px;
+}
+
+.service:last-child {
+	margin-bottom: 0;
+}
+
+.services {
+	margin-bottom: 150px;
+}
+
+/* ----------------------------- */
