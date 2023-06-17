@@ -1,6 +1,7 @@
 body {
 	font-family: 'IBM Plex Mono', monospace;
 	background-color: #000000;
+	min-width: 1150px;
 }
 
 .container {
@@ -266,4 +267,25 @@ div {
 
 .contact:last-child {
 	margin-bottom: 0;
+}
+
+/* ---------------------------------- */
+
+.footer {
+	padding: 76px 0 30px 0;
+	background-color: #FFFFFF;
+}
+
+.footer__title {
+	margin-bottom: 66px;
+	font-size: 22px;
+	line-height: 30px;
+	color: #000000;
+}
+
+.footer__copyright {
+	font-size: 20px;
+	line-height: 27px;
+	color: #000000;
+	opacity: 0.5;
 }
