@@ -208,6 +208,7 @@ div {
 }
 
 .service__title {
+	margin-bottom: 15px;
 	font-size: 55px;
 	line-height: 72px;
 	color: #1BFF07;
