@@ -13,6 +13,11 @@ body {
 	width: 1150px;
 }
 
+header,
+section {
+	margin-bottom: 150px;
+}
+
 h1,
 h2,
 h3,
@@ -24,7 +29,6 @@ div {
 }
 
 .header {
-	margin-bottom: 150px;
 	width: 100%;
 	padding: 23px 0 94px 0;
 	background: linear-gradient(180deg,
@@ -152,10 +156,6 @@ div {
 	color: #1BFF07;
 }
 
-.projects {
-	margin-bottom: 150px;
-}
-
 /* ----------------------------- */
 
 .competence-title {
@@ -194,10 +194,6 @@ div {
 	background-image: url(../resources/file-html.png);
 }
 
-.competencies {
-	margin-bottom: 150px;
-}
-
 /* ------------------------------ */
 
 .service-title {
@@ -234,14 +230,9 @@ div {
 	margin-bottom: 0;
 }
 
-.services {
-	margin-bottom: 150px;
-}
-
 /* ----------------------------- */
 
 .contacts {
-	margin-bottom: 150px;
 	border-radius: 30px;
 	background: #191C19 no-repeat right url(../resources/сharacter.png);
 }
