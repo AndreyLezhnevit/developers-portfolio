@@ -185,13 +185,30 @@ div {
 	margin-bottom: 0;
 }
 
-.file-html-before:before {
+.competence:before {
+	margin-bottom: 12px;
 	content: '';
 	display: block;
 	width: 45px;
-	height: 44px;
-	margin-bottom: 12px;
-	background-image: url(../resources/file-html.png);
+	height: 45px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.competence:nth-child(1)::before {
+	background-image: url(../resources/competence/icon-html.png);
+}
+
+.competence:nth-child(2)::before {
+	background-image: url(../resources/competence/icon-js.png);
+}
+
+.competence:nth-child(3)::before {
+	background-image: url(../resources/competence/icon-phone.png);
+}
+
+.competence:nth-child(4)::before {
+	background-image: url(../resources/competence/icon-react.png);
 }
 
 /* ------------------------------ */
