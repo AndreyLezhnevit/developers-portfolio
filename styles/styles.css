@@ -1,3 +1,5 @@
+@import '../styles/header.css';
+
 html {
 	scroll-behavior: smooth;
 }
@@ -5,7 +7,6 @@ html {
 body {
 	font-family: 'IBM Plex Mono', monospace;
 	background-color: #000000;
-	min-width: 1400px;
 }
 
 .container {
@@ -28,74 +29,28 @@ div {
 	color: #FFFFFF;
 }
 
-.header {
-	width: 100%;
-	padding: 23px 0 94px 0;
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%),
-		url(../resources/lezhenv.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 50%;
+@media (max-width: 1199px) {
+	.container {
+		width: 100%;
+		margin: 0px 15px;
+	}
 
+	header,
+	section {
+		margin-bottom: 120px;
+	}
 }
 
-.logo-wrapper {
-	display: inline-block;
-}
 
-.logo {
-	display: inline-block;
-	width: 180px;
-	height: 55px;
-	border: 1px solid #000000;
-	border-radius: 100px;
-	background-color: #000000;
-	line-height: 55px;
-	font-size: 42px;
-	font-weight: 700;
-	letter-spacing: -0.11em;
-	text-transform: uppercase;
-	text-align: center;
-	color: #1BFF07;
-	text-decoration: none;
-}
+@media (max-width: 767px) {
+	.container {
+		margin: 0px 10px;
+	}
 
-.nav {
-	float: right;
-}
-
-.nav__link {
-	display: inline-block;
-	margin-right: 50px;
-	font-size: 18px;
-	line-height: 23px;
-	text-decoration: none;
-}
-
-.nav__link:last-child {
-	margin-right: 0px;
-}
-
-.nav__link:hover {
-	color: #1BFF07;
-}
-
-.nav-wrapper {
-	margin-bottom: 252px;
-}
-
-.subtitle {
-	margin-bottom: 29px;
-	height: 103px;
-	width: 430px;
-	font-size: 20px;
-	line-height: 26px;
-}
-
-.title {
-	font-size: 80px;
-	line-height: 70px;
-	color: #1BFF07;
+	header,
+	section {
+		margin-bottom: 100px;
+	}
 }
 
 /* ------------------------------------- */
