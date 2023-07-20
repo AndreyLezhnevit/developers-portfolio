@@ -23,14 +23,12 @@
 	text-decoration: none;
 }
 
-
 .nav__link {
 
 	font-size: 18px;
 	line-height: 23px;
 	text-decoration: none;
 }
-
 
 .nav__link:hover {
 	color: #1BFF07;
@@ -47,7 +45,7 @@
 	gap: 0px 50px;
 }
 
-.subtitle {
+.description {
 	margin-bottom: 30px;
 	width: 430px;
 	font-size: 20px;
@@ -86,7 +84,7 @@
 		margin-bottom: 260px;
 	}
 
-	.subtitle {
+	.description {
 		margin-bottom: 10px;
 		width: 90%;
 		font-size: 15px;
