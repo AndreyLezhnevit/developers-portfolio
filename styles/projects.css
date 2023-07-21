@@ -52,6 +52,7 @@
 	display: block;
 	width: 582px;
 	border-radius: 10px;
+	border: 1px solid #1BFF07;
 	line-height: 153px;
 	font-size: 30px;
 	text-align: center;
@@ -61,7 +62,6 @@
 }
 
 .btn-all-projects:hover {
-	border: 1px solid #1BFF07;
 	background-color: #000000;
 	color: #1BFF07;
 }
