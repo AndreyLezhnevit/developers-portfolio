@@ -2,6 +2,7 @@
 @import '../styles/projects.css';
 @import '../styles/competencies.css';
 @import '../styles/services.css';
+@import '../styles/contacts.css';
 
 html {
 	scroll-behavior: smooth;
@@ -22,12 +23,22 @@ section {
 	margin-bottom: 150px;
 }
 
+section:last-child {
+	margin-bottom: 10px;
+}
+
+button {
+	font-family: inherit;
+	cursor: pointer;
+}
+
 h1,
 h2,
 h3,
 a,
 p,
-div {
+div,
+button {
 	letter-spacing: -0.03em;
 	color: #FFFFFF;
 }
@@ -35,7 +46,7 @@ div {
 @media (max-width: 1199px) {
 	.container {
 		width: 100%;
-		margin: 0px 15px;
+		padding: 0px 15px;
 	}
 
 	header,
@@ -47,48 +58,13 @@ div {
 
 @media (max-width: 767px) {
 	.container {
-		margin: 0px 10px;
+		padding: 0px 10px;
 	}
 
 	header,
 	section {
 		margin-bottom: 100px;
 	}
-}
-
-/* ----------------------------- */
-
-.contacts {
-	border-radius: 30px;
-	background: #191C19 no-repeat right url(../resources/сharacter.png);
-}
-
-.contacts-wrapper {
-	padding: 320px 0 169px 0;
-}
-
-.contacts-title {
-	margin-bottom: 28px;
-	font-size: 35px;
-	line-height: 60px;
-}
-
-.contact__link {
-	font-size: 60px;
-	line-height: 60px;
-	text-decoration: none;
-}
-
-.contact__link:hover {
-	color: #1BFF07;
-}
-
-.contact {
-	margin-bottom: 20px;
-}
-
-.contact:last-child {
-	margin-bottom: 0;
 }
 
 /* ---------------------------------- */
