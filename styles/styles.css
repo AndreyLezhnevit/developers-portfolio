@@ -4,6 +4,7 @@
 @import '../styles/services.css';
 @import '../styles/contacts.css';
 @import '../styles/footer.css';
+@import '../styles/burger.css';
 
 html {
 	scroll-behavior: smooth;
@@ -42,6 +43,10 @@ div,
 button {
 	letter-spacing: -0.03em;
 	color: #FFFFFF;
+}
+
+.body_fixed {
+	overflow: hidden;
 }
 
 @media (max-width: 1199px) {
