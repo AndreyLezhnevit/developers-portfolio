@@ -1,0 +1,99 @@
+.header {
+	width: 100%;
+	padding: 23px 0 94px 0;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%),
+		url(../resources/lezhenv.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.logo {
+	display: block;
+	padding: 0px 12px 0px 9px;
+	border-radius: 100px;
+	background-color: #000000;
+	line-height: 42px;
+	font-size: 42px;
+	font-weight: 700;
+	letter-spacing: -0.11em;
+	text-transform: uppercase;
+	text-align: center;
+	color: #1BFF07;
+	text-decoration: none;
+}
+
+.nav__link {
+
+	font-size: 18px;
+	line-height: 23px;
+	text-decoration: none;
+}
+
+.nav__link:hover {
+	color: #1BFF07;
+}
+
+.nav-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 252px;
+}
+
+.nav {
+	display: flex;
+	gap: 0px 50px;
+}
+
+.description {
+	margin-bottom: 30px;
+	width: 430px;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.title {
+	width: 919px;
+	font-size: 80px;
+	line-height: 70px;
+	color: #1BFF07;
+}
+
+@media (max-width: 1199px) {
+	.nav {
+		display: none;
+	}
+
+	.header {
+		padding: 23px 0 60px 0;
+	}
+
+	.nav-wrapper {
+		margin-bottom: 290px;
+	}
+
+	.title {
+		width: 727px;
+		font-size: 60px;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.nav-wrapper {
+		margin-bottom: 260px;
+	}
+
+	.description {
+		margin-bottom: 10px;
+		width: 90%;
+		font-size: 15px;
+		line-height: 19px;
+	}
+
+	.title {
+		width: 100%;
+		font-size: 40px;
+		line-height: 47px;
+	}
+}

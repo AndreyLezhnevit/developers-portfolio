@@ -3,9 +3,11 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<title>Андрей Лежнев - frontend разработчик</title>
 
+	<link rel="icon" href="resources/favicon.png" type="image/png" />
 	<link rel="stylesheet" href="styles/reset.css">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,49 +32,68 @@
 					<a href="#services" class="nav__link">услуги</a>
 					<a href="#contacts" class="nav__link">контакты</a>
 				</nav>
+				<div class="js-burger-btn burger-btn"></div>
 			</div>
 			<div class="about">
-				<p class="subtitle">Разрабатываю имиджевые сайты для
+				<p class="description">Разрабатываю имиджевые сайты для
 					малого и среднего бизнеса, которые
 					повышают престиж компании и позволяют
 					выделиться на фоне конкурентов</p>
 				<h1 class="title">Привет, я Андрей —
-					<br>фронтенд разработчик
+					фронтенд разработчик
 				</h1>
+			</div>
+		</div>
+		<div class="js-burger burger">
+			<div class="burger__content">
+				<div class="logo-wrapper">
+					<a href="#" class="burger-logo">
+						Leznev
+					</a>
+				</div>
+				<nav class="burger-nav">
+					<a href="#projects" class="burger-nav__link">портфолио</a>
+					<a href="#competencies" class="burger-nav__link">компетенции</a>
+					<a href="#services" class="burger-nav__link">услуги</a>
+					<a href="#contacts" class="burger-nav__link">контакты</a>
+				</nav>
+				<div class="burger__contacts js-burger__content">
+					<div class="burger__contacts-title">для связи:</div>
+					<ul class="burger__contacts-list">
+						<li>
+							<a class="burger__contacts-mail" href="mailto:andreysaron1@gmail.com">mail</a>
+						</li>
+						<li>
+							<a class="burger__contacts-tg" target="_blank"
+								href="https://t.me/Andorei_Sairon">Andorei_Sairon</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</header>
 	<main>
 		<section id="projects" class="projects">
 			<div class="container">
-				<h2 class="project-title">Самые свежие проекты</h2>
+				<h2 class="project-subtitle">Самые свежие проекты</h2>
 				<ul class="project-list">
 					<li class="project">
-						<img class="project__image" src="resources/projects/realhome.png" alt="проекта realhome">
-						<p class="project__subtitle">Realhome</p>
-						<p class="project__description">дизайн, верстка, настройка</p>
-					</li>
-					<li class="project">
-						<img class="project__image" src="resources/projects/glass.png" alt="проекта glass">
-						<p class="project__subtitle">GLASS</p>
-						<p class="project__description">разработка интерфейса</p>
-					</li>
-					<li class="project">
-						<img class="project__image" src="resources/projects/fesiyen.png" alt="проекта fesiyen">
-						<p class="project__subtitle">Fesiyen</p>
-						<p class="project__description">разработка интерфейса</p>
+						<img class="project__image" src="resources/projects/metrika.jpg" alt="проекта realhome">
+						<p class="project__type">дизайн интерьера</p>
+						<p class="project__title">Realhome</p>
+						<p class="project__description">верстка, настройка</p>
 					</li>
 				</ul>
-				<a href="https://github.com/AndreyLezhnevit" target="_blank" class="btn-all-projects">Смотреть все
+				<a class="btn-all-projects" href="https://github.com/AndreyLezhnevit" target="_blank">Смотреть все
 					проекты</a>
 			</div>
 		</section>
 		<section class="competencies" id="competencies">
 			<div class="container">
-				<h2 class="competence-title">Мои компетенции</h2>
+				<h2 class="competence-subtitle">Мои компетенции</h2>
 				<ul class="competence-list">
 					<li class="competence">
-						<p class="competence__subtitle">HTML и CSS</p>
+						<p class="competence__title">HTML и CSS</p>
 						<p class="competence__description">
 							это основа фронтенд разработки. Умение создавать и правильно
 							структурировать HTML-документы, а также применять стили к этим
@@ -81,7 +102,7 @@
 						</p>
 					</li>
 					<li class="competence">
-						<p class="competence__subtitle">JavaScript</p>
+						<p class="competence__title">JavaScript</p>
 						<p class="competence__description">
 							это язык программирования, который используется для создания
 							динамического и интерактивного пользовательского интерфейса.
@@ -91,7 +112,7 @@
 						</p>
 					</li>
 					<li class="competence">
-						<p class="competence__subtitle">Работа с библиотеками и фреймворками</p>
+						<p class="competence__title competence__title_big-height">Работа с библиотеками и фреймворками</p>
 						<p class="competence__description">
 							фронтенд разработчики должны быть знакомы с различными
 							библиотеками и фреймворками, такими как React, Angular, Vue и
@@ -101,15 +122,12 @@
 						</p>
 					</li>
 					<li class="competence">
-						<p class="competence__subtitle">Разработка для мобильных
-							<br>устройств и адаптивная верстка
+						<p class="competence__title">Разработка для мобильных
+							устройств и адаптивная верстка
 						</p>
 						<p class="competence__description">
-							фронтенд разработчики должны быть знакомы с различными
-							библиотеками и фреймворками, такими как React, Angular, Vue и
-							другими. Умение использовать готовые решения, адаптировать их
-							под нужды проекта и расширять их функциональность, является
-							очень важным навыком.
+							создание страниц сайта, автоматически подстраивающихся под размер,
+							разрешение и ориентацию экрана устройства.
 						</p>
 					</li>
 				</ul>
@@ -117,10 +135,10 @@
 		</section>
 		<section class="services" id="services">
 			<div class="container">
-				<h2 class="service-title">Помогаю реализовать широкий спектр задач</h2>
+				<h2 class="service-subtitle">Помогаю реализовать широкий спектр задач</h2>
 				<ul class="service-list">
 					<li class="service">
-						<img class="service__img" src="resources/services/turnkey-website.png"
+						<img class="service__img" src="resources/services/turnkey-website.jpg"
 							alt="части страниц финанс сайта">
 						<div class="service__text">
 							<p class="service__title">Разработка сайта под ключ</p>
@@ -133,7 +151,7 @@
 						</div>
 					</li>
 					<li class="service">
-						<img class="service__img" src="resources/services/site-pages.png" alt="страницы сайта">
+						<img class="service__img" src="resources/services/site-pages.jpg" alt="страницы сайта">
 						<div class="service__text">
 							<p class="service__title">Верстка сайтов</p>
 							<p class="service__description">
@@ -144,7 +162,7 @@
 						</div>
 					</li>
 					<li class="service">
-						<img class="service__img" src="resources/services/mobile-app.png"
+						<img class="service__img" src="resources/services/mobile-app.jpg"
 							alt="части страниц мобильного приложения">
 						<div class="service__text">
 							<p class="service__title">Разработка мобильного интерфейса</p>
@@ -162,25 +180,43 @@
 		<section class="contacts" id="contacts">
 			<div class="container">
 				<div class="contacts-wrapper">
-					<h2 class="contacts-title">для связи:</h2>
-					<ul class="contacts-list">
-						<li class="contact">
-							<a class="contact__link" target="_blank" href="https://t.me/Andorei_Sairon">telegram</a>
-						</li>
-						<li class="contact">
-							<a class="contact__link" target="_blank" href="mailto:andreysaron1@gmail.com">mail</a>
-						</li>
-					</ul>
+					<h2 class="contacts-subtitle">
+						Для связи со мной
+						заполните простую форму
+					</h2>
+					<div class="contact__form">
+						<input class="input contact__input" type="text" name="name" placeholder="Имя Фамилия">
+						<input class="input contact__input" type="email" name="email" placeholder="Электронная почта">
+					</div>
+					<button class="contact__button">
+						Отправить
+					</button>
 				</div>
 			</div>
 		</section>
 	</main>
 	<footer class="footer">
 		<div class="container">
-			<p class="footer__title">Портфолио фротнтенд-разработчика Андрея Лежнева</p>
-			<p class="footer__copyright">Все права защищены. 2023</p>
+			<div class="row">
+				<div class="col">
+					<p class="col__title">Портфолио фротнтенд-разработчика Андрея Лежнева</p>
+				</div>
+				<div class="col col_gap">
+					<a class="col__link" href="mailto:andreysaron1@gmail.com" target="_blank">mail</a>
+					<a class="col__link" href="https://t.me/Andorei_Sairon" target="_blank">telegram</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<p class="col__copyright">Все права защищены. 2023</p>
+				</div>
+				<div class="col">
+					<p class="col__data-policy">политика обработки данных</p>
+				</div>
+			</div>
 		</div>
 	</footer>
+	<script src="burger.js"></script>
 </body>
 
 </html>
