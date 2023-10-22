@@ -43,6 +43,7 @@
 	width: 362px;
 	height: 100%;
 	background-color: #000000;
+	overflow-y: auto;
 }
 
 .burger-logo {
